@@ -1,0 +1,21 @@
+function take(n, m) {
+    for (let i = n; i < m; i++) {
+        if (i < 2) return;  
+
+        let divCount = 0;
+        
+       
+        for (let j = 1; j <= i; j++) {
+            if (i % j === 0) divCount++;  
+        }
+        
+       
+        if (divCount === 2) {
+            console.log(i);
+        }
+    }
+}
+
+ 
+take(5, 10);  
+take(7, 20); 
